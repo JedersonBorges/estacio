@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenando</title>
+    <script src="ordenando.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 5px;
+}
+
+h1 {
+    font-weight: bolder;
+}
+#aviso {
+    color: red;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    margin-bottom: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Ordenando Valores</h1>
+    <label for="valor">Valor</label>
+    <input class="form-control" type="number" id="valor">
+    <button type="button" class="btn btn-primary btn-sm" onclick="adicionar()">Adicionar</button>
+    <button type="button" class="btn btn-primary btn-sm" onclick="limparLista()">Resetar</button>
+    <div id="aviso"></div>
+    <select class="form-select" id="algoritmo">
+        <option value="bubble_sort" selected>Bubble Sort</option>
+        <option value="selection_sort">Selection Sort</option>
+        <option value="quick_sort">Quick Sort</option>
+    </select> 
+    <button type="button" class="btn btn-primary btn-sm" onclick="ordenar()">Ordenar</button>
+    <button type="button" class="btn btn-primary btn-sm" onclick="misturar()">Misturar</button>
+
+    <ul id="valores"></ul>
+</body>
+</html>

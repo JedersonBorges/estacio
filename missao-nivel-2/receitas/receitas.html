@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Receitas</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #FFC107; 
+    }
+    .container-fluid {
+      padding: 20px;
+    }
+    #pnlCatalogo {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body onload="preencheCatalogo()">
+
+  <div class="container-fluid bg-warning">
+    <h1>Catálogo de Receitas</h1>
+    <div id="pnlCatalogo"></div>
+  </div>
+  
+  <script src="receitas.js"></script>
+</body>
+</html>
